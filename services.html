@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Brgy. IV Alaminos, Laguna</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #ffebee);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1abc9c;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .main-menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .main-menu a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .main-menu a:hover {
+      color: #2ecc71;
+      transform: scale(1.1);
+    }
+
+    .content {
+      padding: 40px;
+      text-align: center;
+      background: white;
+      margin: 30px auto;
+      width: 85%;
+      max-width: 900px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+    }
+
+    .content h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1abc9c;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .content p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .services-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .services-list li {
+      background: #ff6b6b;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .services-list li:hover {
+      transform: translateY(-5px);
+      background: #c0392b;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .main-menu a {
+        font-size: 1em;
+      }
+
+      .content {
+        padding: 20px;
+        width: 95%;
+        margin: 20px auto;
+      }
+
+      .content h2 {
+        font-size: 1.8em;
+      }
+
+      .services-list li {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      .main-menu {
+        flex-direction: row;
+        gap: 15px;
+      }
+
+      .main-menu a {
+        font-size: 1em;
+      }
+
+      .content {
+        padding: 15px;
+        width: 90%;
+        margin: 15px auto;
+      }
+
+      .content h2 {
+        font-size: 1.5em;
+      }
+
+      .services-list li {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Available Services</h2>
+    <p>Here are the services we offer to the community:</p>
+    <ul class="services-list">
+      <li>Community Health Services</li>
+      <li>Education and Literacy Programs</li>
+      <li>Environmental Clean-up Initiatives</li>
+      <li>Local Events and Activities</li>
+      <li>Disaster Preparedness Training</li>
+      <li>Senior Citizen Support Programs</li>
+    </ul>
+  </section>
+</body>
+</html>
